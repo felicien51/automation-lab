@@ -1,0 +1,18 @@
+# Pytest cache
+.pytest_cache/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Generated log files
+log_*.txt
+
+# OS files
+.DS_Store
+Thumbs.db
