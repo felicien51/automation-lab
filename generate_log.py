@@ -48,8 +48,8 @@ def generate_log(log_data, directory="."):
         raise ValueError("log_data must be a list of strings.")
 
     filename = f"log_{datetime.now().strftime('%Y%m%d')}.txt"
-    filepath = os.path.join(directory, filename)
-
+    filepath = os.path.normpath(os.path.join(directory, filename))
+    
     with open(filepath, "w") as file:
         for entry in log_data:
             file.write(f"{entry}\n")
